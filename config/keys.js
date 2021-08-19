@@ -10,8 +10,8 @@ google: {
   },
 linkedin:{
   clientID:
-      "785w8aw6yna19s",
-  clientSecret: "pGtnus0Rh1mZbl9u",
+      "772e35csyvw8m1",
+  clientSecret: "khPIZ6JZ3idpeZa8",
 },
 token: { TOKEN_SECRET: "myTokenSecret" },
 }

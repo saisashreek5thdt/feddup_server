@@ -1,0 +1,124 @@
+.search_icon{
+    height: 50%;
+  
+}
+
+.search_user::-webkit-input-placeholder { /* Edge */
+    font-size: 1vw;
+    text-align: center;
+  }
+  
+  .search_user:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-size: 1vw;
+    text-align: center;
+  }
+  
+  .search_user::placeholder {
+    font-size: 1vw;
+    text-align: center;
+  }
+
+  .users_list{
+      height: 80%;
+      
+      margin-top: 20%;
+  }
+
+  .users{
+      height: 11%;
+      width: 90%;
+      display: flex;
+      margin-left: 5%;
+      margin-right: 5%;
+      background-color: white;
+     
+  }
+
+  .users_img{
+      height: 100%;
+      object-fit: contain;
+  }
+  .Img_main{
+      width: 15%;
+      margin-top: auto;
+      margin-bottom: auto;
+     
+  }
+  .details{
+      /* float:right ; */
+      width: 75;
+      padding-left: 10%;
+      height: 100%;
+      
+  }
+
+  .user_name{
+height: 50%;
+display: flex;
+align-items:baseline;
+justify-content: space-between;
+
+
+  }
+  .common_font{
+      font-size: 0.7vw;
+      display: flex;
+      align-items: baseline;
+  }
+
+  .admn_feedbck_sidebar{
+      height: 100%;
+      width: 25% ;
+      /* border: solid; */
+  }
+
+  .admn_feedbck_main{
+      height: 100%;
+    
+      width: 75%;
+  }
+
+  .feedbackAdminList{
+height: 85%;
+margin-top: 5%;
+/* border: solid */
+
+  }
+
+  .mainHeading{
+      font-size: 2vw;
+  }
+
+  .detailFeedback{
+      height: 30%;
+      /* border: solid */
+      border-radius: 10px 50px 10px  50px;
+      box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.9);
+  }
+
+  .user_small_detail{
+      height: 15%;
+      display: flex;
+    
+  }
+  .user_cmnt{
+      height: 60%;
+   
+  }
+
+  .buttonss{
+      height: 25%;
+     
+  }
+  .feedbackImg{
+      height: 100%;
+      width: 5%;
+  }
+.feedback_comnt{
+    font-size: 0.9vw;
+    color: grey;
+}
+
+.buttonss{
+    display: flex;
+}

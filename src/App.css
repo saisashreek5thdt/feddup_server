@@ -1,0 +1,36 @@
+#root{
+    height: 100% !important;
+    width: 100%;
+    /* border: solid black; */
+    overflow: hidden;
+}
+
+
+html, body,.DashboardMain,  .App {
+    height: 100% !important;
+    overflow: hidden;
+   
+  }
+
+  .DashboardMain{
+      overflow: hidden;
+  }
+
+  .sidebarpart{
+      height: 100%;
+      width: 80%;
+  
+  }
+
+  .adminDashboard{
+      display: flex;
+  }
+  .search_box{
+      height: 5%;
+      width: 70 !important;
+      margin: 0% auto;
+     
+      text-align: center
+  }
+
+ 

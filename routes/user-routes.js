@@ -20,7 +20,7 @@ const { db } = require("../models/user");
 router.post(
     "/signup",
     async (req, res) => {
-      console.log(req.body.fullName, req.body.password,"singnuo",req.body)
+      console.log(req.body.fullName, req.body.password,"singnup",req.body)
         const {
             fullName,
             email,
@@ -120,7 +120,7 @@ router.post("/forget", async (req, res) => {
             pass: "gemini1992"
         }
     });
-    var mailOptions = { from: 'st040192@gmail.com', to: user.email, subject: 'Password Reset Link', text: 'Hello '+ user.fullName +',\n\n' + 'Please reset your password by clicking the link: \nhttp://localhost:3000/resetpassword/' + token + '\n\nThank You!\n' };
+    var mailOptions = { from: 'st040192@gmail.com', to: user.email, subject: 'Password Reset Link', text: 'Hello '+ user.fullName +',\n\n' + 'Please reset your password by clicking the link: \nhttp://159.89.171.252:3000/resetpassword/' + token + '\n\nThank You!\n' };
                   smtpTransport.sendMail(mailOptions, function (err) {
                       if (err) { 
                           return res.status(500).send({msg:'Technical Issue!.'});
@@ -193,6 +193,7 @@ router.post(
   "/login",
   async (req, res,next) => {
     const { username, password } = req.body;
+    console.log(req.body.username);
     try {
       let user = await Users.findOne({
         email:username
@@ -206,9 +207,9 @@ router.post(
         return res.status(400).json({
           message: "Incorrect Password !"
         });
-      if (!user.isVerified){
-          return res.status(401).send({msg:'Your Email has not been verified. Please click on resend'});
-      } 
+      // if (!user.isVerified){
+      //     return res.status(401).send({msg:'Your Email has not been verified. Please click on resend'});
+      // } 
         const token = jwt.sign({ user }, keys.token.TOKEN_SECRET);
           req.token = token;
           const newUser = {
@@ -306,7 +307,7 @@ router.get("/users/:id", async (req, res) => {
     router.post("/linkedinlogin", 
     async(req,res)=>{
       const{code}=req.body
-      let urlLinkedin=`https://www.linkedin.com/uas/oauth2/accessToken?grant_type=authorization_code&code=${code}&redirect_uri=http://localhost:3000/linkedin&client_id=${keys.linkedin.clientID}&client_secret=${keys.linkedin.clientSecret}`
+      let urlLinkedin=`https://www.linkedin.com/uas/oauth2/accessToken?grant_type=authorization_code&code=${code}&redirect_uri=http://159.89.171.252:3000/linkedin&client_id=${keys.linkedin.clientID}&client_secret=${keys.linkedin.clientSecret}`
       const token= await fetch(urlLinkedin,{
         method:'GET'
       }).then( (res)=>{

@@ -15,7 +15,7 @@ const UserSchema = mongoose.Schema({
   },
   isVerified: { 
     type: Boolean, 
-    default: false 
+    default: true
   },
   ipAddress:{
     type:String,

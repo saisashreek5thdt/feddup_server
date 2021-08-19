@@ -21,7 +21,9 @@
     "node-fetch": "^2.6.1",
     "nodemailer": "^6.6.3",
     "nodemailer-sendgrid-transport": "^0.2.0",
-    "smtp-server": "^3.9.0"
+    "smtp-server": "^3.9.0",
+    "swagger-jsdoc": "^6.1.0",
+    "swagger-ui-express": "^4.1.6"
   },
   "devDependencies": {
     "nodemon": "^2.0.12"

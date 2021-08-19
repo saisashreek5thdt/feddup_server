@@ -1,0 +1,15 @@
+<svg id="Bakground" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1922" height="1080" viewBox="0 0 1922 1080">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.271" cy="-0.512" r="1.666" gradientTransform="translate(0.219) scale(0.563 1)" gradientUnits="objectBoundingBox">
+      <stop offset="0.112" stop-color="#e692d0"/>
+      <stop offset="0.622" stop-color="#a958cc"/>
+      <stop offset="1" stop-color="#6e3bc7"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-2" cx="0.274" cy="-0.264" r="1.832" gradientTransform="translate(0.248) scale(0.503 1)" xlink:href="#radial-gradient"/>
+  </defs>
+  <g id="Group_51" data-name="Group 51" transform="translate(0)">
+    <rect id="Rectangle_29" data-name="Rectangle 29" width="1920.848" height="961" transform="translate(1.151)" fill="url(#radial-gradient)"/>
+    <path id="Path_25" data-name="Path 25" d="M1.155,227.438C16.821,281.1,60.693,399.425,182.948,477.295c57.333,36.518,114.91,53.322,167.4,63.458,286.313,55.284,407.586-90.972,660.3-74.034,292.7,19.618,359.427,231.2,625.425,205.18,128.187-12.538,225.718-72.729,283.65-116.339.759,203.006,1.517,348.9,2.276,551.906H1.155C-2.846,811.775,5.156,523.129,1.155,227.438Z" transform="translate(0 -146.466)" fill="url(#radial-gradient-2)"/>
+  </g>
+  <path id="Path_26" data-name="Path 26" d="M0,1901.513c51.924-34.259,128.418-68.865,216.225-44.473,50.561,14.046,73.72,39,127.633,65.4,98.84,48.4,179.494,42.149,250.761,36.624,152.8-11.847,242.965-87.89,401.493-118.779,69.293-13.5,118.083-21.25,191.237-14.281,226.872,21.615,347.525,129.064,532.425,14.9,93.344-57.632,160.326-144.377,202.226-208.427v460H0Z" transform="translate(0 -1012.483)" fill="#fff"/>
+</svg>
